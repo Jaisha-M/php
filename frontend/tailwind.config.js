@@ -52,7 +52,9 @@ module.exports = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+  			'bruwrite-blue': '#6366f1',
+  			'bruwrite-teal': '#14b8a6'
   		},
   		keyframes: {
   			'accordion-down': {
