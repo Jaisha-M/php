@@ -12,8 +12,10 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-slate-900 text-white pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-gradient-to-br from-bruwrite-blue to-bruwrite-teal relative pt-16 pb-8">
+      <div className="absolute inset-0 bg-black/30"></div>
+      
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="col-span-2">
@@ -21,19 +23,18 @@ const Footer = () => {
               <img 
                 src="https://customer-assets.emergentagent.com/job_dc024922-a41d-4ef4-98f5-941e7821bf50/artifacts/dg6ixgbu_Bruwrite%20Logo%201-25.png" 
                 alt="Bruwrite Logo" 
-                className="h-8 w-auto"
+                className="h-8 w-auto brightness-0 invert"
               />
             </div>
-            <p className="text-slate-300 text-sm leading-relaxed max-w-md">
-              Professional resume writing service specializing in mid-to-senior level professionals. 
-              We craft compelling career narratives that get you noticed by the right people.
+            <p className="text-white/80 text-sm leading-relaxed max-w-md">
+              We're not just another resume service. We're career transformation specialists who turn your work history into interview gold.
             </p>
             <div className="flex items-center space-x-4 mt-6">
-              <div className="flex items-center space-x-2 text-sm text-slate-400">
+              <div className="flex items-center space-x-2 text-sm text-white/70">
                 <Mail className="h-4 w-4" />
                 <span>hello@bruwrite.com</span>
               </div>
-              <div className="flex items-center space-x-2 text-sm text-slate-400">
+              <div className="flex items-center space-x-2 text-sm text-white/70">
                 <Globe className="h-4 w-4" />
                 <span>Global Service</span>
               </div>
@@ -42,20 +43,20 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-serif font-medium text-white mb-4">Services</h4>
-            <ul className="space-y-2 text-sm text-slate-300">
+            <h4 className="text-lg font-serif font-medium text-white mb-4">What We Do</h4>
+            <ul className="space-y-2 text-sm text-white/80">
               <li>
                 <button 
                   onClick={() => scrollToSection('services')}
-                  className="hover:text-bruwrite-teal transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200"
                 >
-                  Resume Writing
+                  Resume Makeovers
                 </button>
               </li>
               <li>
                 <button 
                   onClick={() => scrollToSection('services')}
-                  className="hover:text-bruwrite-teal transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200"
                 >
                   ATS Optimization
                 </button>
@@ -63,17 +64,17 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('services')}
-                  className="hover:text-bruwrite-teal transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200"
                 >
-                  Career Consultation
+                  Career Strategy Calls
                 </button>
               </li>
               <li>
                 <button 
                   onClick={() => scrollToSection('services')}
-                  className="hover:text-bruwrite-teal transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200"
                 >
-                  LinkedIn Optimization
+                  LinkedIn Tweaks
                 </button>
               </li>
             </ul>
@@ -81,28 +82,28 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h4 className="text-lg font-serif font-medium text-white mb-4">Company</h4>
-            <ul className="space-y-2 text-sm text-slate-300">
+            <h4 className="text-lg font-serif font-medium text-white mb-4">Learn More</h4>
+            <ul className="space-y-2 text-sm text-white/80">
               <li>
                 <button 
                   onClick={() => scrollToSection('testimonials')}
-                  className="hover:text-bruwrite-teal transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200"
                 >
                   Success Stories
                 </button>
               </li>
               <li>
                 <button 
-                  onClick={() => scrollToSection('process')}
-                  className="hover:text-bruwrite-teal transition-colors duration-200"
+                  onClick={() => scrollToSection('portfolio')}
+                  className="hover:text-white transition-colors duration-200"
                 >
-                  Our Process
+                  Our Work
                 </button>
               </li>
               <li>
                 <button 
                   onClick={() => scrollToSection('pricing')}
-                  className="hover:text-bruwrite-teal transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200"
                 >
                   Pricing
                 </button>
@@ -110,9 +111,9 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('contact')}
-                  className="hover:text-bruwrite-teal transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200"
                 >
-                  Contact Us
+                  Get Started
                 </button>
               </li>
             </ul>
@@ -120,33 +121,33 @@ const Footer = () => {
         </div>
 
         {/* Trust Indicators */}
-        <div className="border-t border-slate-700 pt-8 mb-8">
-          <div className="flex items-center justify-center space-x-8 text-slate-400 text-sm">
+        <div className="border-t border-white/20 pt-8 mb-8">
+          <div className="flex items-center justify-center flex-wrap gap-8 text-white/70 text-sm">
             <div className="flex items-center space-x-2">
               <Shield className="h-4 w-4" />
               <span>Satisfaction Guaranteed</span>
             </div>
-            <div className="hidden sm:block h-4 w-px bg-slate-600"></div>
-            <div>80%+ Success Rate</div>
-            <div className="hidden sm:block h-4 w-px bg-slate-600"></div>
-            <div>500+ Professionals Served</div>
+            <div className="hidden sm:block h-4 w-px bg-white/30"></div>
+            <div>80%+ Interview Success Rate</div>
+            <div className="hidden sm:block h-4 w-px bg-white/30"></div>
+            <div>500+ Careers Transformed</div>
           </div>
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-slate-700 pt-6">
-          <div className="flex flex-col sm:flex-row items-center justify-between text-sm text-slate-400">
+        <div className="border-t border-white/20 pt-6">
+          <div className="flex flex-col sm:flex-row items-center justify-between text-sm text-white/70">
             <div className="mb-4 sm:mb-0">
               © {currentYear} Bruwrite. All rights reserved.
             </div>
             <div className="flex items-center space-x-6">
-              <button className="hover:text-bruwrite-teal transition-colors duration-200">
+              <button className="hover:text-white transition-colors duration-200">
                 Privacy Policy
               </button>
-              <button className="hover:text-bruwrite-teal transition-colors duration-200">
+              <button className="hover:text-white transition-colors duration-200">
                 Terms of Service
               </button>
-              <button className="hover:text-bruwrite-teal transition-colors duration-200">
+              <button className="hover:text-white transition-colors duration-200">
                 Refund Policy
               </button>
             </div>
@@ -155,9 +156,9 @@ const Footer = () => {
 
         {/* Money Back Guarantee Badge */}
         <div className="mt-8 text-center">
-          <div className="inline-flex items-center bg-green-600/20 border border-green-500 rounded-lg px-4 py-2 text-green-400 text-sm font-medium">
+          <div className="inline-flex items-center bg-green-500/20 border border-green-300 rounded-lg px-4 py-2 text-green-300 text-sm font-medium">
             <Shield className="h-4 w-4 mr-2" />
-            Get Interview Calls or Your Money Back — Guaranteed
+            Interview Calls or Your Money Back — Promise
           </div>
         </div>
       </div>

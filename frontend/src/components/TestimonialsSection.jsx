@@ -12,7 +12,7 @@ const TestimonialsSection = () => {
       setCurrentIndex((prevIndex) => 
         prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
       );
-    }, 6000);
+    }, 8000);
 
     return () => clearInterval(timer);
   }, [testimonials.length]);
@@ -28,40 +28,42 @@ const TestimonialsSection = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section id="testimonials" className="py-24 bg-slate-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+    <section id="testimonials" className="py-16 bg-gradient-to-br from-bruwrite-teal to-bruwrite-blue relative">
+      <div className="absolute inset-0 bg-black/20"></div>
+      
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-light text-white mb-6">
-            Real Clients,
-            <span className="block text-bruwrite-teal">Real Interviews</span>
+            Real People,
+            <span className="block text-white">Real Results</span>
           </h2>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Don't take our word for it. Here's what professionals say about their Bruwrite experience.
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            Don't just take our word for it. Here's what happens when we rewrite your story.
           </p>
         </div>
 
         <div className="relative max-w-4xl mx-auto">
           {/* Main Testimonial */}
-          <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-xl">
-            <Quote className="h-10 w-10 text-bruwrite-blue mb-6" />
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 lg:p-10 border border-white/20">
+            <Quote className="h-8 w-8 text-white/60 mb-6" />
             
-            <blockquote className="text-xl lg:text-2xl text-slate-700 font-light leading-relaxed mb-8">
+            <blockquote className="text-xl lg:text-2xl text-white font-light leading-relaxed mb-8">
               "{currentTestimonial.review}"
             </blockquote>
 
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 bg-bruwrite-blue rounded-full flex items-center justify-center text-white text-xl font-bold">
+                <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center text-bruwrite-blue text-lg font-bold">
                   {currentTestimonial.initial}
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium text-slate-900">
+                  <h4 className="text-lg font-medium text-white">
                     {currentTestimonial.name}
                   </h4>
-                  <p className="text-slate-600">
+                  <p className="text-white/70">
                     {currentTestimonial.jobTitle}
                   </p>
-                  <p className="text-sm text-slate-500">
+                  <p className="text-sm text-white/60">
                     {currentTestimonial.company}
                   </p>
                 </div>
@@ -73,7 +75,7 @@ const TestimonialsSection = () => {
                     <Star key={i} className="h-4 w-4 fill-current text-yellow-400" />
                   ))}
                 </div>
-                <p className="text-sm text-green-600 font-medium">
+                <p className="text-sm text-green-300 font-medium">
                   {currentTestimonial.result}
                 </p>
               </div>
@@ -86,9 +88,9 @@ const TestimonialsSection = () => {
               variant="outline"
               size="sm"
               onClick={goToPrevious}
-              className="w-12 h-12 rounded-full border-white text-white hover:bg-white hover:text-slate-900"
+              className="w-10 h-10 rounded-full border-white text-white hover:bg-white hover:text-bruwrite-blue"
             >
-              <ChevronLeft className="h-5 w-5" />
+              <ChevronLeft className="h-4 w-4" />
             </Button>
 
             {/* Dots */}
@@ -97,10 +99,10 @@ const TestimonialsSection = () => {
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                  className={`w-2 h-2 rounded-full transition-all duration-200 ${
                     index === currentIndex 
-                      ? 'bg-bruwrite-teal scale-125' 
-                      : 'bg-slate-400 hover:bg-slate-300'
+                      ? 'bg-white scale-125' 
+                      : 'bg-white/40 hover:bg-white/60'
                   }`}
                 />
               ))}
@@ -110,26 +112,26 @@ const TestimonialsSection = () => {
               variant="outline"
               size="sm"
               onClick={goToNext}
-              className="w-12 h-12 rounded-full border-white text-white hover:bg-white hover:text-slate-900"
+              className="w-10 h-10 rounded-full border-white text-white hover:bg-white hover:text-bruwrite-blue"
             >
-              <ChevronRight className="h-5 w-5" />
+              <ChevronRight className="h-4 w-4" />
             </Button>
           </div>
         </div>
 
         {/* Stats */}
-        <div className="grid md:grid-cols-3 gap-8 mt-20 text-center">
+        <div className="grid md:grid-cols-3 gap-8 mt-16 text-center">
           <div>
-            <div className="text-4xl font-bold text-bruwrite-teal mb-2">80%+</div>
-            <p className="text-slate-300">Get interviews within 2 weeks</p>
+            <div className="text-4xl font-bold text-white mb-2">80%+</div>
+            <p className="text-white/70">Interview calls within 2 weeks</p>
           </div>
           <div>
-            <div className="text-4xl font-bold text-bruwrite-teal mb-2">500+</div>
-            <p className="text-slate-300">Successful career transitions</p>
+            <div className="text-4xl font-bold text-white mb-2">500+</div>
+            <p className="text-white/70">Career transformations</p>
           </div>
           <div>
-            <div className="text-4xl font-bold text-bruwrite-teal mb-2">48hrs</div>
-            <p className="text-slate-300">Average delivery time</p>
+            <div className="text-4xl font-bold text-white mb-2">48hrs</div>
+            <p className="text-white/70">Average turnaround time</p>
           </div>
         </div>
       </div>
