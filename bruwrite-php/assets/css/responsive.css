@@ -1,0 +1,553 @@
+/* Responsive Design for Bruwrite Website */
+
+/* =====================
+   MOBILE FIRST APPROACH
+   ===================== */
+
+/* Base mobile styles are in main style.css */
+
+/* =====================
+   SMALL DEVICES (576px and up)
+   ===================== */
+@media (min-width: 576px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.375rem;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .trust-indicators {
+        gap: 2.5rem;
+    }
+    
+    .pain-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .footer-buttons {
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+/* =====================
+   MEDIUM DEVICES (768px and up) - Tablets
+   ===================== */
+@media (min-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.375rem;
+    }
+    
+    /* Hero Section */
+    .hero-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .company-logos {
+        gap: 3rem;
+        font-size: 1.25rem;
+    }
+    
+    /* Pain Section */
+    .pain-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    .pain-card {
+        padding: 2.5rem 2rem;
+    }
+    
+    /* Portfolio Section */
+    .portfolio-buttons {
+        flex-direction: row;
+    }
+    
+    /* Process Section */
+    .process-step {
+        margin-bottom: 4rem;
+    }
+    
+    .step-content {
+        padding: 2rem;
+    }
+    
+    /* Testimonials */
+    .testimonial-text {
+        font-size: 1.375rem;
+    }
+    
+    .testimonial-author {
+        flex-wrap: nowrap;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Pricing */
+    .pricing-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+    
+    /* CTA Section */
+    .cta-buttons {
+        flex-direction: row;
+    }
+    
+    .contact-details {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    /* Modals */
+    .modal-content {
+        padding: 3rem;
+        max-width: 700px;
+    }
+    
+    .modal-content h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* =====================
+   LARGE DEVICES (1024px and up) - Desktops
+   ===================== */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+    /* Header */
+    .navbar-nav {
+        display: flex;
+    }
+    
+    .mobile-menu-toggle {
+        display: none;
+    }
+    
+    /* Hero Section */
+    .hero-title {
+        font-size: 4rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.625rem;
+    }
+    
+    .trust-indicators {
+        gap: 3rem;
+    }
+    
+    .company-logos {
+        gap: 4rem;
+        font-size: 1.375rem;
+    }
+    
+    /* Portfolio Section */
+    .portfolio-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+    
+    /* Solutions Section */
+    .solutions-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Process Section */
+    .process-line {
+        display: block;
+    }
+    
+    .step-number {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .step-content {
+        max-width: 360px;
+        margin-left: auto;
+    }
+    
+    .process-step.reverse .step-content {
+        margin-left: 0;
+        margin-right: auto;
+    }
+    
+    /* Testimonials */
+    .testimonial-text {
+        font-size: 1.5rem;
+    }
+    
+    /* Pricing */
+    .pricing-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .pricing-card.popular {
+        transform: scale(1.1);
+    }
+    
+    .pricing-card.popular:hover {
+        transform: scale(1.1) translateY(-8px);
+    }
+    
+    /* CTA Section */
+    .cta-subtitle {
+        font-size: 1.625rem;
+    }
+    
+    .cta-trust {
+        gap: 3rem;
+    }
+}
+
+/* =====================
+   EXTRA LARGE DEVICES (1280px and up)
+   ===================== */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+    
+    .hero-title {
+        font-size: 4.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.75rem;
+    }
+    
+    .section-title {
+        font-size: 3.5rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .portfolio-content {
+        gap: 5rem;
+    }
+    
+    .testimonial-text {
+        font-size: 1.625rem;
+    }
+    
+    .cta-subtitle {
+        font-size: 1.75rem;
+    }
+}
+
+/* =====================
+   ULTRA WIDE DEVICES (1536px and up)
+   ===================== */
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-title {
+        font-size: 5rem;
+    }
+    
+    .section-title {
+        font-size: 4rem;
+    }
+}
+
+/* =====================
+   HIGH DPI DISPLAYS
+   ===================== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo,
+    .resume-pdf {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* =====================
+   LANDSCAPE ORIENTATION
+   ===================== */
+@media (orientation: landscape) and (max-height: 600px) {
+    .hero-section {
+        min-height: 120vh;
+        padding: 2rem 0;
+    }
+    
+    .section-padding {
+        padding: 3rem 0;
+    }
+    
+    .navbar {
+        padding: 0.5rem 0;
+    }
+}
+
+/* =====================
+   PRINT OPTIMIZATIONS
+   ===================== */
+@media print {
+    .hero-section,
+    .final-cta-section {
+        page-break-inside: avoid;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .testimonial-card {
+        page-break-inside: avoid;
+    }
+}
+
+/* =====================
+   REDUCED MOTION
+   ===================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .btn:hover {
+        transform: none;
+    }
+    
+    .solution-card:hover,
+    .pain-card:hover,
+    .step-content:hover {
+        transform: none;
+    }
+}
+
+/* =====================
+   DARK MODE SUPPORT
+   ===================== */
+@media (prefers-color-scheme: dark) {
+    /* The site is already dark, but we can enhance it further if needed */
+    .modal-content {
+        background: var(--gray-800);
+        color: var(--white);
+    }
+    
+    .modal-content h2 {
+        color: var(--white);
+    }
+    
+    .modal-content p {
+        color: var(--gray-300);
+    }
+    
+    .form-group label {
+        color: var(--gray-300);
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        background: var(--gray-700);
+        border-color: var(--gray-600);
+        color: var(--white);
+    }
+    
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        border-color: var(--primary-blue);
+    }
+    
+    .close {
+        color: var(--gray-300);
+    }
+    
+    .close:hover {
+        color: var(--white);
+    }
+}
+
+/* =====================
+   ACCESSIBILITY IMPROVEMENTS
+   ===================== */
+
+/* Focus indicators */
+.btn:focus-visible,
+.nav-link:focus-visible,
+.mobile-nav-link:focus-visible {
+    outline: 2px solid var(--white);
+    outline-offset: 2px;
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .btn-secondary {
+        border-width: 2px;
+    }
+    
+    .solution-card,
+    .pain-card,
+    .step-content,
+    .testimonial-card,
+    .pricing-card {
+        border-width: 2px;
+    }
+    
+    .navbar-nav .nav-link {
+        font-weight: 600;
+    }
+}
+
+/* =====================
+   BROWSER-SPECIFIC FIXES
+   ===================== */
+
+/* Safari */
+@supports (-webkit-appearance: none) {
+    .backdrop-blur {
+        -webkit-backdrop-filter: blur(10px);
+    }
+}
+
+/* Firefox */
+@-moz-document url-prefix() {
+    .solution-card:hover,
+    .pain-card:hover {
+        transform: translateY(-4px) scale(1.02);
+    }
+}
+
+/* Internet Explorer 11 (fallback) */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .pricing-grid {
+        display: -ms-flexbox;
+        -ms-flex-wrap: wrap;
+    }
+    
+    .pricing-card {
+        -ms-flex: 1 1 300px;
+    }
+}
+
+/* =====================
+   HOVER DEVICE DETECTION
+   ===================== */
+@media (hover: hover) and (pointer: fine) {
+    /* Enhanced hover effects for devices with precise pointers */
+    .btn:hover {
+        transform: translateY(-3px);
+    }
+    
+    .solution-card:hover,
+    .pain-card:hover {
+        transform: translateY(-6px);
+    }
+    
+    .pricing-card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .pricing-card.popular:hover {
+        transform: scale(1.1) translateY(-10px);
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    /* Touch-friendly interactions */
+    .btn:active {
+        transform: scale(0.98);
+    }
+    
+    .solution-card:active,
+    .pain-card:active {
+        transform: scale(0.98);
+    }
+}
+
+/* =====================
+   PERFORMANCE OPTIMIZATIONS
+   ===================== */
+
+/* Prevent layout shifts */
+.resume-pdf {
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+
+/* GPU acceleration for animations */
+.btn,
+.solution-card,
+.pain-card,
+.step-content,
+.pricing-card {
+    will-change: transform;
+}
+
+/* Optimize font loading */
+@media (max-width: 767px) {
+    .hero-title,
+    .section-title {
+        font-display: swap;
+    }
+}
+
+/* =====================
+   CONTAINER QUERIES (Future Enhancement)
+   ===================== */
+@supports (container-type: inline-size) {
+    .portfolio-card {
+        container-type: inline-size;
+    }
+    
+    @container (min-width: 600px) {
+        .portfolio-content {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
